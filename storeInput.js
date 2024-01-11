@@ -2,7 +2,9 @@ let button = document.querySelector("button");
 
 button.addEventListener("click", function() {
     let text = document.querySelector('.text').value;
-    
+    let number = document.querySelector('.number').value;
+    let email = document.querySelector('.email').value;
+  let date = document.querySelector('.date').value;
     // 1. Save the value of the remaining three inputs in three separate variables.
     //  - Use the text variable as a guide.
     //  - You should have a variable for the number, email, and date.
@@ -13,6 +15,9 @@ button.addEventListener("click", function() {
     let resultsDiv = document.querySelector('#results');
     resultsDiv.innerHTML = "";
     resultsDiv.innerHTML += `<p>Text: ${text}</p>`;
+    resultsDiv.innerHTML += `<p>Number: ${number}</p>`;
+    resultsDiv.innerHTML += `<p>Email: ${email}</p>`;
+    resultsDiv.innerHTML += `<p>Date: ${date}</p>`;
     
     
     // 2. Update the results div innerhtml to the remaining three inputs.
